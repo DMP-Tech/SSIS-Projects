@@ -1,0 +1,54 @@
+
+--Sample Table for File Data 
+
+CREATE TABLE [dbo].[Sample](
+	[Row ID] [float] NULL,
+	[Order ID] [nvarchar](200) NULL,
+	[Order Date] [datetime] NULL,
+	[Ship Date] [datetime] NULL,
+	[Ship Mode] [varchar](200) NULL,
+	[Customer ID] [varchar](200) NULL,
+	[Customer Name] [varchar](200) NULL,
+	[Segment] [varchar](200) NULL,
+	[Country Region] [varchar](200) NULL,
+	[City] [varchar](200) NULL,
+	[State Province] [varchar](200) NULL,
+	[Postal Code] [varchar](200) NULL,
+	[Region] [varchar](200) NULL,
+	[Product ID] [varchar](200) NULL,
+	[Category] [varchar](200) NULL,
+	[Sub-Category] [varchar](200) NULL,
+	[Sales] [float] NULL,
+	[Quantity] [float] NULL,
+	[Discount] [float] NULL,
+	[Profit] [float] NULL,
+	[Short_Order_ID] [nvarchar](2) NULL)
+
+--Sample1 Table Created in another Database to move data from one database to another.
+
+CREATE TABLE [master].[dbo].[Sample1](
+	[Row ID] [float] NULL,
+	[Order ID] [nvarchar](200) NULL,
+	[Order Date] [datetime] NULL,
+	[Ship Date] [datetime] NULL,
+	[Ship Mode] [varchar](200) NULL,
+	[Customer ID] [varchar](200) NULL,
+	[Customer Name] [varchar](200) NULL,
+	[Segment] [varchar](200) NULL,
+	[Country Region] [varchar](200) NULL,
+	[City] [varchar](200) NULL,
+	[State Province] [varchar](200) NULL,
+	[Postal Code] [varchar](200) NULL,
+	[Region] [varchar](200) NULL,
+	[Product ID] [varchar](200) NULL,
+	[Category] [varchar](200) NULL,
+	[Sub-Category] [varchar](200) NULL,
+	[Sales] [float] NULL,
+	[Quantity] [float] NULL,
+	[Discount] [float] NULL,
+	[Profit] [float] NULL,
+	[Short_Order_ID] [nvarchar](2) NULL)
+
+
+Select * from [dbo].[Sample]
+Select * from [master].[dbo].[Sample1]
